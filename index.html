@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio|Abeer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo"><span>Nahiar</span><span>Abeer</span></a>
+        <span class="dayNight">
+          <ion-icon name="moon-outline"></ion-icon>
+          <ion-icon name="sunny-outline"></ion-icon>
+        </span>
+        <span onclick="display()" class="menu"
+          ><ion-icon name="grid-outline"></ion-icon
+        ></span>
+        <ul class="ul">
+          <li><a class="active" href="/">Home  <span></span></a></li>
+          <li><a href="#">About Me  <span></span></a></li>
+          <li><a href="#">My projects  <span></span></a></li>
+          <li><a href="/about.html">Contact Me <span></span></a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <h3>Hey_</h3>
+        <h2>I am - <span id="text"></span></h2>
+        <p><p id="description" ></p></p>
+
+        <button class="hire">Hire Me</button>
+        <button class="chit-chat">
+          <ion-icon name="chatbubbles-outline"></ion-icon> Let's Chat
+        </button>
+      </div>
+      <div class="myPhoto">
+        <img src="images/photo.png" />
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+      let typingText = new Typed("#text", {
+        strings: [
+          "Nahiar Abeer",
+          "Programmer",
+          "Hungry Learner",
+          "Designer",
+          "Front End Developer",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1500,
+      });
+      let description = new Typed("#description", {
+        strings: ['',
+          "Hi, I am a web developer with a strong foundation in HTML and CSS, as well as expertise in C programming. I am currently expanding my skills by learning JavaScript and other frameworks. I am also proficient in Python and have a deep understanding of C programming. As a college student, I am dedicated to staying up-to-date with the latest trends and best practices in web development. I am passionate about creating visually appealing and user-friendly websites and applications that are also efficient and performant. I am looking forward to utilizing my skills and continue to grow as a developer."
+        ],
+        loop: false,
+        typeSpeed: 10,
+      });
+    </script>
+  </body>
+</html>

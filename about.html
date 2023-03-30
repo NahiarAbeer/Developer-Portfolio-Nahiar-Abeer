@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio|Abeer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <section class="navbar">
+      <header>
+        <a href="#" class="logo"><span>Nahiar</span><span>Abeer</span></a>
+        <span class="dayNight">
+          <ion-icon name="moon-outline"></ion-icon>
+          <ion-icon name="sunny-outline"></ion-icon>
+        </span>
+        <span onclick="display()" class="menu"
+          ><ion-icon name="grid-outline"></ion-icon
+        ></span>
+        <ul class="ul">
+          <li>
+            <a href="/">Home <span></span></a>
+          </li>
+          <li>
+            <a href="#">About Me <span></span></a>
+          </li>
+          <li>
+            <a href="#">My projects <span></span></a>
+          </li>
+
+          <li>
+            <a class="active" href="/about.html">Contact Me <span></span></a>
+          </li>
+        </ul>
+      </header>
+    </section>
+
+    <section class="contact">
+      <div class="links fb">
+        <a target="_blank" href="https://www.facebook.com/nahiarabeer999"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <br />
+        <a target="_blank" href="https://www.facebook.com/nahiarabeer999"
+          >Facebook</a
+        >
+      </div>
+      <div class="links insta">
+        <a  target="_blank" href="https://www.instagram.com/nahiarabeer/"
+          >
+          <img src="images/insta.png" alt="">
+        </a>
+
+        <a target="_blank" href="https://www.instagram.com/nahiarabeer/">Instagram</a>
+      </div>
+      <div class="links mail">
+        <a target="_blank" href="mailto:nahiarabir@gmail.com"
+          ><ion-icon name="mail-outline"></ion-icon
+        ></a>
+
+        <a target="_blank" href="mailto:nahiarabir@gmail.com">E-mail</a>
+      </div>
+      <div class="links yt">
+        <a target="_blank" href="https://www.youtube.com/@nahiarabeer9565">
+          <ion-icon name="logo-youtube"></ion-icon
+        ></a>
+        <a target="_blank" href="https://www.youtube.com/@nahiarabeer9565">YouTube</a>
+      </div>
+      <div class="links linkedin">
+        <a target="_blank" href="https://www.linkedin.com/in/nahiar-abeer-9b8486259/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/nahiar-abeer-9b8486259/">Linked-In</a>  
+        
+      </div>
+    </section>
+
+    <script>
+      let banner = document.querySelector(".navbar");
+      let dayNight = document.querySelector(".dayNight");
+      // let colorArr=['#fff','#333']
+      dayNight.onclick = function () {
+        banner.classList.toggle("night");
+        document.body.classList.toggle("night");
+      };
+      // let menu = document.getElementById('#menu');
+      // let ul=document.querySelector('.ul')
+      // function display(){
+      //     let a=ul.style.display
+
+      // }
+
+      //new code again :<
+      let menu = document.querySelector(".menu");
+      let ul = document.querySelector(".ul");
+
+      function toggleMenu() {
+        if (ul.style.display === "none") {
+          ul.style.display = "flex";
+        } else {
+          ul.style.display = "none";
+        }
+      }
+
+      menu.addEventListener("click", toggleMenu);
+    </script>
+  </body>
+</html>
