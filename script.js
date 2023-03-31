@@ -25,5 +25,16 @@ function toggleMenu() {
         ul.style.display = 'none';
     }
 }
-
 menu.addEventListener('click', toggleMenu);
+// Check if the user has visited the site before
+if(localStorage.getItem('visited') === null) {
+    // If not, set the visited value to 1 and display a welcome message
+    localStorage.setItem('visited', 1);
+    console.log("Welcome to our website!");
+  } else {
+    // If yes, increment the visited value and display the total number of visits
+    let visited = parseInt(localStorage.getItem('visited')) + 1;
+    localStorage.setItem('visited', visited);
+    console.log(`You have visited our website ${visited} times.`);
+  }
+  
