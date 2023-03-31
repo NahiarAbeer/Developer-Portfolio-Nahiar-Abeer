@@ -424,6 +424,7 @@ header .ul li a.active span:nth-child(1) {
     }
 
     .banner::before {
+        display: none;
         filter: blur(3px);
     }
 
