@@ -1,4 +1,4 @@
-body {
+#link4 {
     
     display: flex;
     width: 100%;
@@ -85,4 +85,10 @@ body {
 
 .links.linkedin a {
     color: #0a66c2;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact{
+        width: 100%;
+    }
 }
