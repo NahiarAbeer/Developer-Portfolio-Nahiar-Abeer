@@ -19,10 +19,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 50vh;
-    padding: 5%;
     background: inherit;
     transition: .5s;
+
 }
 
 .banner::before {
@@ -63,7 +62,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    padding: 20px 50px;
+    padding: .5% 1%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -377,27 +376,29 @@ header .ul li a.active span:nth-child(1) {
     }
 
     header {
-        padding: 20px 30px;
+        padding: 2.5%;
         justify-content: space-between;
-        max-height: 90px;
+        align-items: center;
     }
 
     .menu {
-        display: block;
+        align-self: baseline;
         font-size: 2.3rem;
+        display: block;
     }
 
     header .ul {
         display: none;
         width: 50%;
         right: 3%;
-        height: 400px;
+        height: 60%;
         position: fixed;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.67);
         flex-direction: column;
         border: 2px solid #e91e63;
         z-index: 999;
+        backdrop-filter: blur(66px);
         top: 100px;
         border-radius: 20px;
     }
@@ -422,6 +423,7 @@ header .ul li a.active span:nth-child(1) {
     .banner {
         flex-direction: column;
         row-gap: 50px;
+        padding: 6%;
     }
 
     .banner::before {
@@ -436,7 +438,8 @@ header .ul li a.active span:nth-child(1) {
         left: 60%;
     }
     .myPhoto img {
-        width: 100%;
+      
+        max-width: 200px;
 
     }
 }
